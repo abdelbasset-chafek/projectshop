@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <h1 href="logo.html">Shoppy</h1>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/products/pic01.webp" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="images/products/pic01.webp" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/products/pic11.webp" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/products/pic12.webp" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/products/pic13.webp" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Men's Shoes</h6>
+            <h4>Nike Air Force 1 '07</h4>
+            <h2>$135</h2>
+            <select>
+                <option>Select size</option>
+                <option>42</option>
+                <option>41</option>
+                <option>40</option>
+                <option>39</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Products Details</h4>
+            <span>
+                The radiance lives on in the Nike Air Force 1 ’07, the b-ball icon that puts a fresh spin on what you know best: crisp leather, bold colors and the perfect amount of flash to make you shine.
+            </span>
+        </div>
+
+    </section>
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p> 
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email adress">
+            <button class="normal" >Sign Up</button>
+        </div>
+
+    </section>
+
+    <!----Footer--->
+     
+    <footer class="section-foot">
+    <div class="col">
+        <h1 class="logo " href="logo.html">Shoppy</h1>
+        <h4>Contac Info</h4>
+        <p><strong>Adresse: </strong>203 Fake St. Mountain View,USA</p>
+        <p><strong>Phone: </strong>(+212) 634 56 980</p>
+        <p><strong>Email:</strong>emailaddress@domain.com</p>
+        <div class="follow" >
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <img src="images/facebook.png">
+                <img src="images/twitter.png">
+                <img src="images/instagram.png">
+                <img src="images/pinterest.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>Explore</h4>
+        <a href="#" >Delivery Infotmation</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+
+    <div class="col">
+        <h4>Quick Links</h4>
+        <a href="index.html" >Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About us</a>
+        <a class="active" href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google play</p>
+        <div class="row">
+            <img src="images/app.jpg" >
+            <img src="images/play.jpg" >  
+        </div>
+        <p>Secured Payment Gatways</p>
+        <img src="images/pay.png" >
+    </div>
+
+    <div class="copyright">
+        <p>©2023 Copyright All rights reserved - HTML CSS</p>
+    </div>
+    </footer> 
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img")
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallig[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallig[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallig[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallig[3].src;
+        }
+    </script>
+    
+</body>
+</html>
